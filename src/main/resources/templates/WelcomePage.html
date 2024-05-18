@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Worker System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .register-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Worker System</h1>
+        <p>Your Gateway to Efficient Task Management</p>
+        <a th:href="@{/Dashboard}" class="register-btn">To Admin dashboard</a>
+        <br>
+        <p>Don't have an account yet?</p>
+        <a th:href="@{/showNewAdminForm}" class="register-btn">Register Now</a>
+    </header>
+
+    <main>
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Daily Task Summary</h3>
+                <p>Receive a summary of tasks performed and their costs at the end of each day.</p>
+            </div>
+            <div class="feature">
+                <h3>Automatic Task Logging</h3>
+                <p>Tasks performed are automatically logged for daily summaries.</p>
+            </div>
+            <div class="feature">
+                <h3>Service Upload & Pricing</h3>
+                <p>Upload services, set prices, and allow clients to choose and evaluate services.</p>
+            </div>
+            <div class="feature">
+                <h3>Worker Reports</h3>
+                <p>Reports on tasks performed and costs for supervisor review.</p>
+            </div>
+            <div class="feature">
+                <h3>Access Control</h3>
+                <p>Access to reports limited to authorized supervisors.</p>
+            </div>
+        </section>
+
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Login to your account.</li>
+                <li>Upload your services and set prices.</li>
+                <li>Perform tasks and receive daily summaries.</li>
+            </ol>
+        </section>
+
+        <section id="help">
+            <h2>Need Help?</h2>
+            <p>Contact support for any assistance or questions.</p>
+        </section>
+
+        <section id="stay-connected">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media for updates and announcements.</p>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p>Best Regards,</p>
+        <p>The Worker System Team</p>
+    </footer>
+</body>
+
+</html>
